@@ -1,0 +1,35 @@
+# .dockerignore
+
+# Python virtual environment (large, not needed in container)
+venv/
+.venv/
+
+# Compiled Python files (regenerated automatically)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Git history (not needed at runtime)
+.git/
+.github/
+
+# Documentation
+*.md
+*.txt
+
+# Exception: we DO need requirements.txt
+!requirements.txt    
+
+# MLflow tracking data (only needed locally)
+mlruns/
+*.db
+
+# IDE settings
+.vscode/
+.idea/
